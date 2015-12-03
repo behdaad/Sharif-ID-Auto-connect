@@ -3,20 +3,27 @@
 
 A simple AppleScript to automatically connect Sharif ID (and reconnect if disconnetcted) when you are connected to CE_WLAN network. You can easily modify the script if you use different names.
 
-Easiest way to use this app, is to set your Sharif ID VPN connection name `Sharif ID` (no hyphens, exactly like mentioned), clone the repository (or just simply download the zipped file), move `Sharif ID Auto-connect.app` to `/Applications` and enjoy a seamless and streamlined experience. You can also add it to your Login Items via System `Preferences` > `Users & Groups` > `Login Items`. This way, it starts everytime you login to your user account. It lives in the background and never bothers you.
+**Instructions:**
 
-**If you want to edit the script, i.e. make it work with other networks, do as following:**
+- Clone the repository or just download the zipped file and extract it.
+- Open the `Sharif ID Auto-connect.applescript` with `ScripEditor`.
+- Modify the script as you wish, e.g. change the VPN connection name. It assumes your Sharif ID connection name is `Sharif ID` and connects it when you are connected to `CE_WLAN`. You can change both. To change network connection names, open network preferences, select your desired connection, click the gear icon and click `Rename Service...`.
+- `Export` (`File` > `Export...`) it as `Application` and check `Stay open after run handler`.
+- Move the resulting `Sharif ID Auto-connect.app` to `/Applications`.
+- If you want this app to run everytime you login to your account, you must add it to `Login Items`: `System Preferences` > `Users & Groups` > `Login Items` > `+`.
+- Enjoy.
 
-Modify the script as you wish and export it as `Application`, check the `Stay open after run handler` and move it to `/Applications`.
-You can add it to your Login Items via `System Preferences` > `Users & Groups` > `Login Items`.
-Moreover, if you don't want it to have an icon in Dock, open the `.app` folder (right-click > Show Package Contents), open `Info.plist` and add the following
+If you don't want it to have an icon in the Dock, do as following:
+
+- Right click on `Sharif ID Auto-connect.app` and select `Show Package Contents`.
+- Open `Info.plist` and the following
 
 ```
 <key>LSUIElement</key>
 <string>1</string>
 ```
-
 as a key `<dict>`. It should look like this:
+
 ```
   ...
   <key>LSUIElement</key>
