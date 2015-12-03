@@ -32,4 +32,4 @@ as a key `<dict>`. It should look like this:
 </plist>
 ```
 
-Please report any bugs or problems by creating an issue. Also, feel free to share and mpdify as you wish.
+Please report any bugs or problems by creating an `Issue`. Also, feel free to share and modify as you wish.
