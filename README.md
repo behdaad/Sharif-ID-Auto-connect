@@ -16,7 +16,7 @@ A simple AppleScript to automatically connect Sharif ID (and reconnect if discon
 If you don't want it to have an icon in the Dock, do as following:
 
 - Right click on `Sharif ID Auto-connect.app` and select `Show Package Contents`.
-- Open `Info.plist` and the following
+- Open `Info.plist` and add the following
 
 ```
 <key>LSUIElement</key>
