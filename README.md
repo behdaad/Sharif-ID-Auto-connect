@@ -41,5 +41,5 @@ Please report any bugs or problems by creating an `Issue`. Also, feel free to sh
 #### Target platforms
 - iOS
 - Windows
-- Linux
 - Android
+- Linux (Check this repo out: [Sharif-ID-Reconnector](https://github.com/MJafarMashhadi/Sharif-ID-Reconnector))
