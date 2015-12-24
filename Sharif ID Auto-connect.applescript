@@ -1,6 +1,6 @@
 on idle
 	set SSID to do shell script "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'"
-	if ((SSID as string) is equal to "NEW_CE_WLAN") then
+	if ((SSID as string) is equal to "New-CE_WLAN") then
 		tell application "System Events"
 			tell current location of network preferences
 				set VPNConnectionName to the service "Sharif ID"
